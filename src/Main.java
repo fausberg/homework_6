@@ -34,10 +34,25 @@ public class Main {
 //        System.out.println();
 //        computer4.info(computer4.getSum(), computer4.getModel());
 
-        Bankomat person = new Bankomat(2,3,4);
-        person.balans();
-        person.popolnenie(person.getSum(), 1,2,3);
-        person.balans();
-        person.snatie(person.getSum());
+//        Bankomat person = new Bankomat(2,3,4);
+//        person.balans();
+//        person.popolnenie(person.getSum(), 1,2,3);
+//        person.balans();
+//        person.snatie(person.getSum());
+
+//        Reader reader = new Reader("IVAN FADEEV RIEU", "123", "PI","07.07.2003","375336291282", 3);
+//        reader.takebook(reader.getKol(), reader.getFIO());
+//        reader.takebook(reader.getFIO(), reader.getKol(), reader.getFackultet());
+//        System.out.println();
+//        reader.returnbook(reader.getKol(), reader.getFIO());
+//        reader.returnbook(reader.getFIO(), reader.getKol(), reader.getFackultet());
+
+        Matrix matrix = new Matrix(3,3);
+        Matrix matrix1 = new Matrix(3,3);
+        matrix.init();
+        matrix.printMatrix();
+        matrix1.printMatrix();
+        Matrix plus = matrix.plusMatrix(matrix1);
+        plus.printMatrix();
     }
 }
